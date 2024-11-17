@@ -2,11 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Dashboard from './pages/Dashboard';
-import Campaigns from './pages/Campaigns';
 import EditCampaign from './pages/EditCampaign';
 import Login from './pages/LoginPage';
 import CampaignTable from './components/CampaignTable';
 import kkk from './kkk.jpg';
+import Orders from './pages/orders';
+
 function App() {
   const backgroundStyle = {
     backgroundImage: `url(${kkk})`, // Use the imported image URL
@@ -23,6 +24,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/Orders" element={<Orders />} />
           <Route path="/campaigns" element={<CampaignTable />} />
           <Route path="/edit-campaign" element={<EditCampaign />} />
           <Route path="/login" element={<Login />} />

@@ -3,7 +3,7 @@ import { Button, TextField, Grid, Card, CardContent, Dialog, DialogActions, Dial
 
 const Campaigns = () => {
     const [campaigns, setCampaigns] = useState([
-        { id: 1, name: 'Black Friday Sale', status: 'Active', date: '2024-11-25' },
+        { id: 1, name: ' Friday Sale', status: 'Active', date: '2024-11-25' },
         { id: 2, name: 'Holiday Special', status: 'Completed', date: '2024-12-15' },
     ]);
 
