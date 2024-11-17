@@ -7,7 +7,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <h2>Komal's App</h2>
+          <h2>CMR App</h2>
         </div>
         <div className="navbar-links">
           <ul>

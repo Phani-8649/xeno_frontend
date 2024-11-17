@@ -40,7 +40,7 @@ function App() {
             path="/" 
             element={
               <div style={landingPageStyle}>
-                <h1>Welcome to the CRM Komal(21BRS1280) XENO ASSIGNMENT's Page</h1>
+                <h1>Welcome</h1>
               </div>
             }
           />
