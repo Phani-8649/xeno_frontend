@@ -18,11 +18,32 @@ function App() {
     margin: 0,
   };
 
+  const landingPageStyle = {
+    ...backgroundStyle,
+    display: 'flex', // Use flexbox to center the content
+    justifyContent: 'center', // Horizontally center the text
+    alignItems: 'center', // Vertically center the text
+    textAlign: 'center', // Center align the text inside the div
+    color: 'white', // Make the text white to stand out on the background
+    fontSize: '2rem', // Make the text larger
+    fontWeight: 'bold', // Make the text bold
+    zIndex: 1, // Ensure text is on top of the background
+  };
+
   return (
     <div style={backgroundStyle}>
       <Router>
         <NavBar />
         <Routes>
+          {/* Landing Page Route */}
+          <Route 
+            path="/" 
+            element={
+              <div style={landingPageStyle}>
+                <h1>Welcome to the CRM Komal(21BRS1280) XENO ASSIGNMENT's Page</h1>
+              </div>
+            }
+          />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/Orders" element={<Orders />} />
           <Route path="/campaigns" element={<CampaignTable />} />
